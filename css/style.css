@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
+}
+
+body {
+    font-family: "Arial";
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-center {
+    display: flex;
+    align-items: center;
+}
+
+h1,
+h2 {
+    font-family: "Roboto Slab";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head_line {
+    background-color: #1f1f56;
+    padding: 23px 0px;
+}
+
+.head_line ul {
+    gap: 15px;
+}
+
+.head_line a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 0.6em;
+    color: #b1b1d2;
+}
+
+.head_line a:hover {
+    color: orange;
+}
+
+.head_line picture {
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.main_contact {
+    padding: 29px 0;
+}
+
+.main_contact .phone p {
+    padding: 3px 30px 11px 7px;
+    border-right: 1px solid #e4e4ec;
+}
+
+.main_contact .phone a {
+    font-size: 18px;
+    line-height: 0.7em;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.main_contact .phone a:hover {
+    color: orange;
+}
+
+.main_contact .email img {
+    padding-right: 12px;
+}
+
+.main_contact .email a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 0.7em;
+    color: #25252c;
+}
+
+.main_contact .email a:hover {
+    text-decoration: underline;
+}
+
+.main_contact .email p {
+    padding: 5px 50px 12px 29px;
+}
+
+.main_contact .order_call a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 0.7em;
+    color: #25252c;
+    font-weight: bold;
+    border: orange solid 3px;
+    border-radius: 30px;
+    padding: 19px 30px;
+}
+
+.main_contact .order_call a:hover {
+    color: orange;
+    background-color: #25252c;
+}
+
+.main_info {
+    padding: 60px 0;
+    background: #25252c url(../img/main.png) center/cover no-repeat;
+    min-height: 200px;
+    width: 100%;
+}
+
+.main_info h1 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
