@@ -73,7 +73,19 @@ a {
 
 .main_contact .phone p {
     padding: 3px 30px 11px 7px;
-    border-right: 1px solid #e4e4ec;
+}
+
+.line {
+    position: relative;
+    padding: 10px;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    background-color: #e4e4ec;
 }
 
 .main_contact .phone a {
