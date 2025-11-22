@@ -152,3 +152,17 @@ a {
     color: #fff;
     font-weight: 700;
 }
+
+.main_info p {
+    font-size: 14px;
+    line-height: 0.6em;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.info {
+    font-size: 40px;
+    color: #fd8300;
+    font-weight: bold;
+}
