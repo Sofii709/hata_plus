@@ -22,6 +22,10 @@ body {
     align-items: center;
 }
 
+.gap {
+    gap: 10px;
+}
+
 h1,
 h2 {
     font-family: "Roboto Slab";
@@ -71,7 +75,7 @@ a {
     padding: 29px 0;
 }
 
-.main_contact .phone p {
+.phone p {
     padding: 3px 30px 11px 7px;
 }
 
@@ -88,22 +92,22 @@ a {
     background-color: #e4e4ec;
 }
 
-.main_contact .phone a {
+.phone a {
     font-size: 18px;
     line-height: 0.7em;
     color: #25252c;
     font-weight: bold;
 }
 
-.main_contact .phone a:hover {
+.phone a:hover {
     color: orange;
 }
 
-.main_contact .email img {
+.email img {
     padding-right: 12px;
 }
 
-.main_contact .email a {
+.email a {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -111,11 +115,11 @@ a {
     color: #25252c;
 }
 
-.main_contact .email a:hover {
+.email a:hover {
     text-decoration: underline;
 }
 
-.main_contact .email p {
+.email p {
     padding: 5px 50px 12px 29px;
 }
 
@@ -137,6 +141,8 @@ a {
 }
 
 .main_info {
+    display: flex;
+    align-items: center;
     padding: 60px 0;
     background: #25252c url(../img/main.png) center/cover no-repeat;
     min-height: 200px;
@@ -153,7 +159,7 @@ a {
     font-weight: 700;
 }
 
-.main_info p {
+.main_information {
     font-size: 14px;
     line-height: 0.6em;
     color: #ffffff;
@@ -165,4 +171,58 @@ a {
     font-size: 40px;
     color: #fd8300;
     font-weight: bold;
+    text-align: center;
+}
+
+.information {
+    justify-content: center;
+    padding-top: 15px;
+    align-items: flex-end;
+}
+
+.information p:last-child {
+    font-size: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: #ededf5;
+}
+
+.footer_line {
+    align-items: center;
+    padding: 40px;
+}
+
+.about li {
+    padding-bottom: 6px;
+}
+
+.about a {
+    font-size: 14px;
+    line-height: 0.6em;
+    color: #666666;
+    transition: all 1s ease;
+}
+
+.about a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+.footer_bottom {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdce6;
+}
+
+.footer_bottom p {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
 }
