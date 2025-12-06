@@ -225,7 +225,7 @@ a {
 }
 
 .about_us {
-    width: 60%;
+    width: 70%;
 }
 
 .hataplus {
@@ -320,7 +320,61 @@ a {
 }
 
 .categories {
-    width: 30%;
+    width: 25%;
+}
+
+.categories h3 {
+    padding: 16px 51px 13px 15px;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #1f1f56;
+    ;
+}
+
+.categories li {
+    border-bottom: solid 1px #cecedd;
+}
+
+.categories li:last-child {
+    border-bottom: #fff solid 0px;
+}
+
+.inside li {
+    border-bottom: #fff solid 0px;
+}
+
+.categories a {
+    padding: 15px 0px 15px 15px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.categories a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.categories li {
+    background-color: #e4e4ec;
+    transition: all 1s ease;
+}
+
+.inside {
+    display: none;
+}
+
+.inside a:hover {
+    color: #666666;
+    background-color: #cecedd;
+}
+
+.outside:hover > .inside {
+    display: block;
 }
 
 footer {
