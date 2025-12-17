@@ -35,7 +35,7 @@
 
 .wrapper {
     margin: 0 auto;
-    width: 85%;
+    max-width: 970px;
 }
 
 body {
@@ -87,6 +87,14 @@ a {
     gap: 20px;
 }
 
+.head_line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
 .head_line a {
     font-size: 14px;
     letter-spacing: 2px;
@@ -112,8 +120,10 @@ a {
     padding: 29px 0;
 }
 
-.phone p {
-    padding: 3px 30px 11px 7px;
+.column-gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 }
 
 .line {
@@ -124,7 +134,7 @@ a {
 .line::before {
     content: "";
     position: absolute;
-    height: 70px;
+    height: 60px;
     width: 1px;
     background-color: #e4e4ec;
 }
@@ -138,6 +148,14 @@ a {
 
 .phone a:hover {
     color: orange;
+}
+
+.phone p:last-child {
+    padding-left: 22px;
+}
+
+.email {
+    padding-top: 5px;
 }
 
 .email img {
@@ -156,17 +174,6 @@ a {
     text-decoration: underline;
 }
 
-.email p {
-    padding: 5px 50px 12px 29px;
-}
-
-.head_line {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 3;
-}
 
 .fixed {
     padding-top: 65px;
@@ -194,7 +201,6 @@ a {
     align-items: center;
     padding: 60px 0;
     background: #25252c url(../img/main.png) center/cover no-repeat;
-    min-height: 200px;
     width: 100%;
 }
 
@@ -210,7 +216,7 @@ a {
 
 .main_information {
     font-size: 14px;
-    line-height: 0.6em;
+    line-height: 24px;
     color: #ffffff;
     text-align: center;
     padding-top: 12px;
@@ -255,13 +261,14 @@ a {
     line-height: 1.25em;
     color: #24242b;
     font-weight: bold;
-    padding-bottom: 28px;
+    padding-bottom: 13px;
 }
 
 .hataplus p {
     font-size: 14px;
+    line-height: 24px;
     color: #666666;
-    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .p {
@@ -276,7 +283,7 @@ a {
     position: relative;
 }
 
-.hataplus a::before {
+.slow_line a::before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -286,24 +293,10 @@ a {
     transition: all 0.5s ease;
 }
 
-.hataplus a:hover::before {
+.slow_line a:hover::before {
     content: "";
     width: 100%;
     background-color: #fd8300;
-}
-
-.closing_line {
-    display: block;
-    position: relative;
-    padding: 10px;
-}
-
-.closing_line::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #e4e4ec;
 }
 
 .projects {
@@ -319,6 +312,10 @@ a {
 
 .projects figure {
     max-width: 240px;
+}
+
+.figures {
+    column-gap: 28px;
 }
 
 .projects h4 {
@@ -361,8 +358,7 @@ aside {
 
 .categories h3 {
     padding: 16px 51px 13px 15px;
-    font-family: "Roboto Slab";
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #ffffff;
     font-weight: bold;
@@ -404,7 +400,7 @@ aside {
     position: relative;
     padding: 15px 0px 15px 15px;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #25252c;
 }
