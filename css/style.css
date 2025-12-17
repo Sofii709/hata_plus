@@ -370,6 +370,7 @@ aside {
 }
 
 .categories h3 {
+    border-radius: 4px 4px 0px 0px;
     padding: 16px 51px 13px 15px;
     font-size: 16px;
     line-height: 24px;
@@ -385,6 +386,7 @@ aside {
 
 .categories li:last-child {
     border-bottom: #fff solid 0px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .inside li {
@@ -405,7 +407,7 @@ aside {
     transition: all 0.5s ease;
 }
 
-.pointer:hover::before {
+li:hover > a:before {
     border-color: #ededf5;
     transform: translateY(-50%) rotate(45deg);
 }
@@ -419,7 +421,7 @@ aside {
     color: #25252c;
 }
 
-.categories a:hover {
+.categories li:hover > a {
     color: #fff;
     background-color: #fd8300;
 }
@@ -437,17 +439,18 @@ aside {
     padding-left: 30px;
 }
 
-.inside a:hover {
-    color: #666666;
+.outside a > li:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.inside li:hover > a {
+    color: #666;
     background-color: #cecedd;
 }
 
 .outside:hover>.inside {
     display: block;
-}
-
-.border {
-    border-radius: 40px;
 }
 
 footer {
