@@ -154,6 +154,18 @@ a {
     padding: 5px 50px 12px 29px;
 }
 
+.head_line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.fixed {
+    padding-top: 65px;
+}
+
 .main_contact .order_call a {
     display: flex;
     align-items: center;
@@ -305,12 +317,27 @@ a {
 }
 
 .projects h4 {
+    position: relative;
     padding-top: 15px;
     padding-bottom: 7px;
     font-size: 14px;
     line-height: 0.6em;
     color: #1f1f56;
     font-weight: bold;
+}
+
+.projects h4::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1f1f56;
+    transition: all 0.5s ease;
+}
+
+.projects h4:hover::before {
+    width: 60%;
 }
 
 .projects p {
@@ -335,6 +362,7 @@ a {
 }
 
 .categories li {
+    position: relative;
     border-bottom: solid 1px #cecedd;
 }
 
@@ -344,6 +372,24 @@ a {
 
 .inside li {
     border-bottom: #fff solid 0px;
+}
+
+.pointer:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-right: solid 2px #666;
+    border-bottom: solid 2px #666;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.pointer:hover::before {
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .categories a {
