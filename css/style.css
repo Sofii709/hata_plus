@@ -57,7 +57,9 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3
+    {
     font-family: "Roboto Slab";
 }
 
@@ -426,7 +428,7 @@ aside {
     background-color: #cecedd;
 }
 
-.outside:hover > .inside {
+.outside:hover>.inside {
     display: block;
 }
 
