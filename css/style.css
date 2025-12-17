@@ -79,8 +79,9 @@ a {
 }
 
 .head_line {
-    background-color: #1f1f56;
     padding: 23px 0px;
+    max-height: 55px;
+    background-color: #1f1f56;
 }
 
 .head_line ul {
@@ -249,7 +250,7 @@ a {
 }
 
 .about_us {
-    width: 70%;
+    max-width: 70%;
 }
 
 .hataplus {
@@ -350,10 +351,11 @@ a {
 
 aside {
     max-height: 600px;
+    position: sticky;
 }
 
 .categories {
-    width: 25%;
+    max-width: 219px;
 }
 
 .categories h3 {
@@ -398,7 +400,7 @@ aside {
 
 .categories a {
     position: relative;
-    padding: 15px 0px 15px 15px;
+    padding: 15px;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -433,8 +435,8 @@ footer {
 }
 
 .footer_line {
-    align-items: center;
-    padding: 40px;
+    align-items: flex-start;
+    padding: 40px 0px;
 }
 
 .about li {
