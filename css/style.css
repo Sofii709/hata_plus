@@ -62,7 +62,7 @@ body {
 }
 
 .gap {
-    gap: 10px;
+    gap: 15px;
 }
 
 h1,
@@ -137,10 +137,6 @@ hr {
     fill: #fd8300;
 }
 
-.main_contact {
-    padding: 29px 0;
-}
-
 .column-gap {
     display: flex;
     flex-direction: column;
@@ -199,6 +195,10 @@ hr {
 
 .fixed {
     padding-top: 100px;
+}
+
+.main_contact {
+    padding: 29px 0;
 }
 
 .main_contact .order_call a {
@@ -560,13 +560,19 @@ footer {
         padding-top: 65px;
     }
 
+    .categories {
+        max-width: 219px;
+    }
+
+    .main_contact {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 860px) {
     .company {
         flex-direction: row;
         align-items: flex-start;
-    }
-
-    .categories {
-        max-width: 219px;
     }
 }
 
