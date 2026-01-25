@@ -140,7 +140,7 @@ hr {
 .column-gap {
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    row-gap: 16px;
 }
 
 .line {
@@ -199,6 +199,7 @@ hr {
 
 .main_contact {
     padding: 29px 0;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
 }
 
 .main_contact .order_call a {
@@ -514,9 +515,84 @@ footer {
 }
 
 .footer_bottom p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 0.7em;
     color: #9999a6;
+}
+
+.mainy {
+    padding: 15px;
+    margin-bottom: 47px;
+}
+
+.desc h1 {
+    font-size: 27px;
+    color: #24242b;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+
+.desc p {
+    max-width: 942px;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #666666;
+    padding-bottom: 27px;
+}
+
+.table {
+    padding-bottom: 27px;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th {
+    font-family: "Roboto Slab";
+    border: 1px solid #274569;
+    background-color: #1f1f56;
+    color: white;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 10px;
+}
+
+.price-table td {
+    border: 1px solid #cecedd;
+    background-color: #e4e4ec;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #666666;
+    padding: 16px 0 16px 0;
+}
+
+.price-table tr>td {
+    transition: all 1s ease;
+    cursor: url(../img/cursor.cur), default;
+}
+
+.price-table tr:hover>td {
+    background-color: #fd8300;
+    color: white;
+}
+
+.abouts {
+    padding-bottom: 34px;
+}
+
+.abouts a {
+    font-size: 14px;
+    line-height: 0.58em;
+    color: #fd8300;
+    font-weight: bold;
+    position: relative;
+}
+
+.hr {
+    padding-bottom: 30px;
 }
 
 @media screen and (min-width: 467px) {
