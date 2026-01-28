@@ -9,12 +9,14 @@
 </head>
 
 <body>
+    <div id="black_bg"></div>
     <header>
         <div class="head_line">
-            <div class="wrap gap wrapper menu">
+            <div class="gap wrapper menu">
                 <div>
                     <nav>
-                        <ul class="flex-between center">
+                        <ul id="menu" class="flex-between">
+                            <li id="cancel"><a href="">X</a></li>
                             <li><a href="#">Головна</a></li>
                             <li><a href="#">Про компанію</a></li>
                             <li><a href="hata_prise.html">Наші будівлі</a></li>
@@ -23,7 +25,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="media items-center">
+                <div class="media">
                     <div>
                         <a href="#">
                             <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10"
@@ -52,12 +54,15 @@
                         </a>
                     </div>
                 </div>
+                <div id="burger_container">
+                    <span id="burger"></span>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="fixed">
-            <div class="gap wrap main_contact wrapper flex-between center">
+            <div class="gap wrap main_contact wrapper">
                 <div class="one">
                     <a href="">
                         <picture>
@@ -69,7 +74,8 @@
                 <div class="gap wrap flex-between center">
                     <div class="two phone flex-between">
                         <div class="column-gap">
-                            <p class="items-center"><a href="+380971002525"><img src="img/phone.svg" alt="phone"> +38(097) 100-25-25</a></p>
+                            <p class="items-center"><a href="+380971002525"><img src="img/phone.svg" alt="phone">
+                                    +38(097) 100-25-25</a></p>
                             <p><a href="+380971002525">+38(097) 100-25-25</a></p>
                         </div>
                     </div>
@@ -127,7 +133,7 @@
                 </div>
                 <div class="projects gap">
                     <h3>Популярні проекти</h3>
-                    <div class="flex-between figures gap">
+                    <div class="figures gap">
                         <figure>
                             <figcaption>
                                 <a href="#">
@@ -247,6 +253,9 @@
             <p>© Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
     </footer>
+    <script src="js/script.js">
+        javascript: void(0)
+    </script>
 </body>
 
 </html>

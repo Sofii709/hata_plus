@@ -9,21 +9,23 @@
 </head>
 
 <body>
+    <div id="black_bg"></div>
     <header>
         <div class="head_line">
-            <div class="wrap gap wrapper menu">
+            <div class="gap wrapper menu">
                 <div>
                     <nav>
-                        <ul class="flex-between center">
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="index.html">Про компанію</a></li>
+                        <ul id="menu" class="flex-between">
+                            <li id="cancel"><a href="">X</a></li>
+                            <li><a href="#">Головна</a></li>
+                            <li><a href="#">Про компанію</a></li>
                             <li><a href="hata_prise.html">Наші будівлі</a></li>
-                            <li><a href="index.html">Акції</a></li>
-                            <li><a href="index.html">Контакти</a></li>
+                            <li><a href="#">Акції</a></li>
+                            <li><a href="#">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="media items-center">
+                <div class="media">
                     <div>
                         <a href="#">
                             <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" width="10"
@@ -52,38 +54,43 @@
                         </a>
                     </div>
                 </div>
+                <div id="burger_container">
+                    <span id="burger"></span>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <div class="fixed">
-            <div class="gap wrap main_contact wrapper flex-between center">
-                <div class="one">
-                    <a href="">
-                        <picture>
-                            <source src="img/logo.webp" type="image/webp">
-                            <img src="img/logo.png" alt="logo">
-                        </picture>
-                    </a>
-                </div>
-                <div class="gap wrap flex-between center">
-                    <div class="two phone flex-between">
-                        <div class="column-gap">
-                            <p class="items-center"><a href="+380971002525"><img src="img/phone.svg" alt="phone">
-                                    +38(097) 100-25-25</a></p>
-                            <p><a href="+380971002525">+38(097) 100-25-25</a></p>
+            <div class="contact">
+                <div class="gap wrap main_contact wrapper flex-between">
+                    <div class="one">
+                        <a href="">
+                            <picture>
+                                <source src="img/logo.webp" type="image/webp">
+                                <img src="img/logo.png" alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="gap wrap flex-between center">
+                        <div class="two phone flex-between">
+                            <div class="column-gap">
+                                <p class="items-center"><a href="+380971002525"><img src="img/phone.svg" alt="phone">
+                                        +38(097) 100-25-25</a></p>
+                                <p><a href="+380971002525">+38(097) 100-25-25</a></p>
+                            </div>
+                        </div>
+                        <div><span class="line"></span></div>
+                        <div class="three email column-gap">
+                            <p><a href="mailto:hataplus@hata.com.ua"><img src="img/email.svg"
+                                        alt="email">hataplus@hata.com.ua</a>
+                            </p>
+                            <p><a href="skype:hataplus"><img src="img/skype.svg" alt="skype">hataplus</a></p>
                         </div>
                     </div>
-                    <div><span class="line"></span></div>
-                    <div class="three email column-gap">
-                        <p><a href="mailto:hataplus@hata.com.ua"><img src="img/email.svg"
-                                    alt="email">hataplus@hata.com.ua</a>
-                        </p>
-                        <p><a href="skype:hataplus"><img src="img/skype.svg" alt="skype">hataplus</a></p>
+                    <div class="order_call four">
+                        <a href="#">Замовити дзвінок</a>
                     </div>
-                </div>
-                <div class="order_call four">
-                    <a href="#">Замовити дзвінок</a>
                 </div>
             </div>
         </div>
@@ -102,9 +109,9 @@
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th rowspan="2">Назва котеджу</th>
+                            <th class="first" rowspan="2">Назва котеджу</th>
                             <th colspan="3">Характеристики будинків</th>
-                            <th rowspan="2">Ціна</th>
+                            <th class="last" rowspan="2">Ціна</th>
                         </tr>
                         <tr>
                             <th>Площа м²</th>
@@ -113,7 +120,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="without">
                             <td>Hamilton Paradise</td>
                             <td>392</td>
                             <td>5</td>
@@ -172,7 +179,7 @@
             </div>
             <div class="projects gap">
                 <h3>Популярні проекти</h3>
-                <div class="flex-between figures gap">
+                <div class="flex-between figures gap wrap">
                     <figure>
                         <figcaption>
                             <a href="#">
@@ -283,6 +290,9 @@
         <div class="footer_bottom">
             <p>© Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
+        <script src="js/script.js">
+            javascript: void(0)
+        </script>
     </footer>
 </body>
 
