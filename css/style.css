@@ -36,6 +36,7 @@
 .wrapper {
     margin: 0 auto;
     max-width: 970px;
+    padding: 0 15px;
 }
 
 html {
@@ -44,6 +45,10 @@ html {
 
 body {
     font-family: "Arial";
+}
+
+span {
+    display: block;
 }
 
 .flex-between {
@@ -432,6 +437,10 @@ hr {
     align-items: center;
 }
 
+figure {
+    width: 100%;
+}
+
 .projects picture {
     display: block;
     width: 100%;
@@ -571,7 +580,7 @@ footer {
 
 .footer_line {
     justify-content: center;
-    padding: 40px 0px;
+    padding: 40px 15px;
 }
 
 .about li {
@@ -634,7 +643,7 @@ footer {
 }
 
 .price-table {
-    width: 100%;
+    min-width: 964rem;
     border-collapse: collapse;
 }
 
@@ -648,24 +657,28 @@ footer {
     padding: 10px;
 }
 
-.first {
-    text-align: start;
-    padding-left: 20px;
+thead {
+    max-height: 70px;
 }
 
-.last {
+.first th {
+    text-align: start;
+    padding: 0 20px;
+}
+
+.last th {
     text-align: end;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .price-table td:first-child {
     text-align: start;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .price-table td:last-child {
     text-align: end;
-    padding-right: 20px;
+    padding: 0 20px;
     border-right: #fff;
 }
 
@@ -718,7 +731,6 @@ footer {
     .footer_line {
         justify-content: space-between;
         align-items: flex-start;
-        padding: 40px 0px;
     }
 
     .about_us {
@@ -731,11 +743,6 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-    .figures {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     .projects h3 {
         text-align: start;
     }
@@ -744,6 +751,15 @@ footer {
 @media screen and (min-width: 768px) {
     html {
         font-size: 0.9px;
+    }
+
+    .figures {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    figure {
+        width: auto;
     }
 
     .line {
@@ -784,6 +800,14 @@ footer {
 
     .media {
         justify-content: end;
+    }
+
+    .table {
+        overflow: hidden;
+    }
+
+    .price-table {
+        width: 100%;
     }
 }
 
