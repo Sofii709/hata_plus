@@ -113,8 +113,8 @@ hr {
 }
 
 .head_line {
-    padding: 23px 7px;
-    height: auto;
+    padding: 15px 7px;
+    max-height: 55px;
     background-color: #1f1f56;
     position: fixed;
     top: 0;
@@ -134,7 +134,6 @@ hr {
 .head_line a {
     font-size: 14px;
     letter-spacing: 2px;
-    line-height: 0.6em;
     color: #b1b1d2;
 }
 
@@ -158,13 +157,24 @@ hr {
     fill: #fd8300;
 }
 
+.menu {
+    margin: 0;
+    gap: 0px;
+}
+
+.menu ul {
+    justify-content: start;
+    padding: 20rem 0 0 20rem;
+    gap: 40rem;
+}
+
 #menu {
     position: fixed;
     width: 60vw;
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #fff;
+    background-color: #1f1f56;
     z-index: 3;
     transition: all 1s ease;
     flex-direction: column;
@@ -185,13 +195,11 @@ hr {
 }
 
 #burger_container {
-    position: relative;
-    right: 100px;
-
+    display: block;
+    padding-right: 15px;
 }
 
 #burger {
-    position: absolute;
     width: 50px;
     height: 5px;
     background-color: #fff;
@@ -276,11 +284,12 @@ hr {
 
 
 .fixed {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .main_contact {
-    padding: 29px 5px;
+    padding: 29px 0;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -631,6 +640,7 @@ footer {
     line-height: 1.6em;
     color: #666666;
     padding-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .abouts {
@@ -657,18 +667,18 @@ footer {
     padding: 10px;
 }
 
-thead {
-    max-height: 70px;
-}
-
-.first th {
+.price-table .first {
     text-align: start;
     padding: 0 20px;
+    max-height: 70px;
+    box-sizing: border-box;
 }
 
-.last th {
+.price-table .last {
     text-align: end;
     padding: 0 20px;
+    max-height: 70px;
+    box-sizing: border-box;
 }
 
 .price-table td:first-child {
@@ -746,6 +756,14 @@ thead {
     .projects h3 {
         text-align: start;
     }
+
+    .main_contact {
+        margin-bottom: 0px;
+    }
+
+    .desc p {
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -767,7 +785,7 @@ thead {
     }
 
     .fixed {
-        padding-top: 65px;
+        padding-top: 55px;
     }
 
     .categories {
@@ -798,6 +816,12 @@ thead {
         display: none;
     }
 
+    .menu ul {
+        justify-content: start;
+        padding: 0;
+        gap: 0;
+    }
+
     .media {
         justify-content: end;
     }
@@ -808,6 +832,11 @@ thead {
 
     .price-table {
         width: 100%;
+    }
+
+    .menu {
+        margin: 0 auto;
+        gap: 15px;
     }
 }
 
