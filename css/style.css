@@ -115,7 +115,7 @@ hr {
 .head_line {
     padding: 15px 7px;
     max-height: 55px;
-    background-color: #274569;
+    background-color: #1f1f56;
     position: fixed;
     top: 0;
     left: 0;
@@ -160,6 +160,7 @@ hr {
 .menu {
     margin: 0;
     gap: 0px;
+    max-width: 970px;
 }
 
 .menu ul {
@@ -174,7 +175,7 @@ hr {
     height: 100vh;
     top: 0;
     left: -100%;
-    background-color: #1f1f56;
+    background-color: #274569;
     z-index: 3;
     transition: all 1s ease;
     flex-direction: column;
@@ -837,6 +838,7 @@ footer {
     .menu {
         margin: 0 auto;
         gap: 15px;
+        min-width: 970px;
     }
 }
 
