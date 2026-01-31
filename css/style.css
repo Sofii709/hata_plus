@@ -158,9 +158,13 @@ hr {
 }
 
 .menu {
-    margin: 0;
     gap: 0px;
     max-width: 970px;
+    padding: 0 15px;
+}
+
+.menu nav {
+    position: fixed;
 }
 
 .menu ul {
@@ -831,9 +835,9 @@ footer {
     }
 
     .menu {
-        margin: 0 auto;
         gap: 15px;
-        min-width: 970px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -842,7 +846,9 @@ footer {
         flex-direction: row;
         align-items: flex-start;
     }
+}
 
+@media screen and (min-width:1000px) {
     .main_contact {
         justify-content: space-between;
     }
