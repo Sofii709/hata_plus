@@ -242,11 +242,6 @@ hr {
     background-color: #e4e4ec;
 }
 
-.phone {
-    display: flex;
-    align-items: center;
-}
-
 .phone a {
     font-size: 18px;
     line-height: 0.7em;
