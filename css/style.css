@@ -167,6 +167,10 @@ hr {
     position: fixed;
 }
 
+.nav > li {
+  position: relative;
+}
+
 .menu ul {
     justify-content: start;
     padding: 20rem 0 0 20rem;
@@ -224,6 +228,25 @@ hr {
 
 #burger:after {
     bottom: -10px
+}
+
+.submenu,
+.subsubmenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu a,
+.subsubmenu a {
+    background: #cecedd;
+}
+
+#cancelsub,
+#cancelsubsub {
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 
 .column-gap {
@@ -749,6 +772,37 @@ footer {
 
     .phone p:last-child {
         margin-bottom: 0;
+    }
+
+    .submenu:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 5px;
+        width: 100%;
+    }
+
+    nav>li:hover>.submenu {
+        display: block;
+        top: calc(100% + 5px);
+    }
+
+    .submenu>li {
+        position: relative;
+    }
+
+    .submenu>li:hover>.subsubmenu {
+        display: block;
+        top: 0;
+        left: 100%;
+        padding-left: 5px;
+    }
+
+    #cancelsub,
+    #cancelsubsub {
+        display: none;
     }
 }
 
