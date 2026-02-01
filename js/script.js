@@ -26,23 +26,23 @@ function closeMenu(id) {
   id.style.display = 'none'
   id.style.position = 'static'
 }
-if (window.innerWidth < 500) {
+if(window.innerWidth < 500) {
   btn.onclick = (e) => {
-    e.preventDefault()
-    openMenu(submenu)
-  }
+  e.preventDefault()
+  openMenu(submenu)
+}
 
-  subbtn.onclick = (e) => {
-    e.preventDefault()
-    openMenu(subsubmenu)
-  }
+subbtn.onclick = (e) => {
+  e.preventDefault()
+  openMenu(subsubmenu)
+}
 
-  cancelsub.onclick = (e) => {
-    e.preventDefault()
-    closeMenu(submenu)
-  }
-  cancelsubsub.onclick = (e) => {
-    e.preventDefault()
-    closeMenu(subsubmenu)
-  }
+cancelsub.onclick = (e) => {
+  e.preventDefault()
+  closeMenu(submenu)
+}
+cancelsubsub.onclick = (e) => {
+  e.preventDefault()
+  closeMenu(subsubmenu)
+}
 }

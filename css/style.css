@@ -167,8 +167,31 @@ hr {
     position: fixed;
 }
 
-.nav > li {
-  position: relative;
+.nav>li {
+    position: relative;
+}
+
+.nav a {
+    display: block;
+}
+
+.submenu,
+.subsubmenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu a,
+.subsubmenu a {
+    background: #cecedd;
+}
+
+#cancelsub,
+#cancelsubsub {
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 
 .menu ul {
@@ -228,25 +251,6 @@ hr {
 
 #burger:after {
     bottom: -10px
-}
-
-.submenu,
-.subsubmenu {
-    display: none;
-    position: absolute;
-    width: 100%;
-}
-
-.submenu a,
-.subsubmenu a {
-    background: #cecedd;
-}
-
-#cancelsub,
-#cancelsubsub {
-    position: absolute;
-    top: 0;
-    right: 10px;
 }
 
 .column-gap {
