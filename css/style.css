@@ -184,7 +184,9 @@ hr {
 
 .submenu a,
 .subsubmenu a {
-    background: #cecedd;
+    max-width: 125rem;
+    border-radius: 3px;
+    background-color: #e4e4ec;
 }
 
 #cancelsub,
