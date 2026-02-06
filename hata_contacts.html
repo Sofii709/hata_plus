@@ -30,9 +30,10 @@
                                         <li><a href="hata_prise.html">Для чіхуахуа</a></li>
                                         <li><a href="hata_prise.html">Вольєри</a></li>
                                         <li><a href="hata_prise.html">Халабуди</a></li>
-                                        <li><a href="hata_prise.html" id="cancelsubsub">x</a></li>
+                                        <li><a href="javascript:void(0)" id="cancelsubsub">x</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="javascript:void(0)" id="cancelsub">x</a></li>
                             </ul>
                         </li>
                         <li><a href="index.html">Акції</a></li>
@@ -111,21 +112,21 @@
         <section class="main-contact wrapper">
             <h1>Контакти</h1>
             <div class="gap wrap submain-contact">
-                <div>
+                <div class="submain">
                     <h3>Наш офіс</h3>
                     <p>с. Війтівці, Хмельницька обл. 27500</p>
                     <p class="phone"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                     <p class="phone"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                     <p class="email"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
                 </div>
-                <div>
+                <div class="submain">
                     <h3>Консультація</h3>
                     <p>менеджер:</p>
                     <p class="phone"><a href="tel:+380671231005">+38(067) 123-10-05</a></p>
                     <p>директор:</p>
                     <p class="phone"><a href="tel:+380689502791">+38(068) 950-27-91</a></p>
                 </div>
-                <div>
+                <div class="submain">
                     <h3>Реквізити</h3>
                     <p>ЄДРПОУ 60045123, ІПН 991097555173 <br>
                         Св.№59904423</p>
@@ -136,22 +137,26 @@
                     <hr>
                 </div>
             </div>
-            <div class="map gap wrap">
-                <div>
-                    <picture>
-                        <source src="" type="">
-                        <img src="img/map.png" alt="geolocation of us">
-                    </picture>
+            <div class="map wrap">
+                <div class="mapz">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=160RWnFO7yUs3nccVCtgTUdUiX85VIrI&ehbc=2E312F"></iframe>
                 </div>
-                <div>
+                <div class="form">
                     <h3>Форма зворотнього зв’язку</h3>
                     <form action="">
-                        <input type="text" value="Ваше ім’я">
-                        <input type="text" value="Телефон"> <br>
-                        <input type="text" value="Тема повідомлення"> <br>
-                        <input type="text" value="Текст"> <br>
-                        <input type="button" value="Відправити">
-                        <input type="checkbox"> Я бажаю отримувати останні новини
+                                <input class="name" type="text" value="Ваше ім’я">
+                                <input class="phones" type="text" value="Телефон" required>
+                            <br>
+                        <input class="theme" type="text" value="Тема повідомлення"> <br>
+                        <input class="text" type="text" value="Текст"> <br>
+                        <input class="button" type="button" value="Відправити">
+                        <label>
+                            <span class="parent">
+                                <input type="checkbox" checked>
+                                <img src="img/galka.svg" alt="galka">
+                            </span> 
+                            Я бажаю отримувати останні новини
+                        </label>
                     </form>
                 </div>
             </div>

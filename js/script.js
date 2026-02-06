@@ -9,6 +9,7 @@ cancel.onclick = () => {
 }
 
 black_bg.onclick = () => {
+  submenu.style.display = "none"
   menu.style.left = "-100%"
   black_bg.style.display = "none"
 }
@@ -26,7 +27,7 @@ function closeMenu(id) {
   id.style.display = 'none'
   id.style.position = 'static'
 }
-if(window.innerWidth < 500) {
+if(window.innerWidth < 800) {
   btn.onclick = (e) => {
   e.preventDefault()
   openMenu(submenu)
