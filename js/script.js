@@ -17,9 +17,9 @@ black_bg.onclick = () => {
 function openMenu(id) {
   id.style.display = 'block'
   id.style.position = 'fixed'
-  id.style.top = '0'
+  id.style.top = '20%'
   id.style.left = '0'
-  id.style.width = '100%'
+  id.style.width = 'auto'
   id.style.zIndex = '1'
 }
 
@@ -27,6 +27,7 @@ function closeMenu(id) {
   id.style.display = 'none'
   id.style.position = 'static'
 }
+
 if(window.innerWidth < 800) {
   btn.onclick = (e) => {
   e.preventDefault()
