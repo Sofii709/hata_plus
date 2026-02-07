@@ -181,47 +181,40 @@ hr {
 .subsubmenu {
     display: none;
     position: absolute;
-    min-width: 125px;
+    width: 125px;
 }
 
 .submenu a,
 .subsubmenu a {
     background-color: #e4e4ec;
+    padding: 0px 10px;
     font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.subsubmenu a:hover {
+    color: #ffffff;
+    background-color: #fd8300;
+}
+
+.submenu a:hover {
+    color: #ffffff;
+    background-color: #fd8300;
 }
 
 #cancelsub,
 #cancelsubsub {
+    background-color: transparent;
     position: absolute;
-    right: 10px;
-}
-
-.subsubmenu {
-    padding-top: 20px;
+    right: -25px;
+    bottom: 0px;
 }
 
 .submenu li:not(:first-child):not(:last-child) {
     border-top: 1px solid #d1d1dc;
     max-width: 150rem;
-}
-
-.submenu>li>a:after {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-right: 1rem solid #000;
-    border-bottom: 1rem solid #000;
-    position: absolute;
-    right: 9rem;
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-}
-
-.submenu li:hover a:after {
-    transition: .15;
-    border-color: #fff;
-    transform: translateY(-50%) rotate (45deg);
 }
 
 .submenu>li:first-child>a {
@@ -825,6 +818,10 @@ footer {
     align-items: center;
 }
 
+.recvisit {
+    padding-right: 0px;
+}
+
 .main-contact h1 {
     font-size: 24px;
     padding-bottom: 27px;
@@ -930,12 +927,14 @@ input:checked+img {
 }
 
 .text {
+    margin-bottom: 13px;
     width: 100%;
     padding: 15rem 0 80rem 12rem;
 }
 
 .button {
-    padding: 10rem 30rem 30rem;
+    border: none;
+    padding: 12px 30px;
     border-radius: 21px;
     background-color: #fd8300;
     font-size: 14px;
@@ -1084,16 +1083,6 @@ input:checked+img {
         width: 100%;
     }
 
-    .submenu:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -5px;
-        left: 0;
-        height: 5px;
-        width: 100%;
-    }
-
     .nav>li:hover>.submenu {
         display: block;
         top: calc(100% + 5px);
@@ -1141,6 +1130,10 @@ input:checked+img {
     .company {
         flex-direction: row;
         align-items: flex-start;
+    }
+
+    .recvisit {
+        padding-right: 67px;
     }
 }
 

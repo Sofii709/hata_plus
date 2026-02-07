@@ -17,7 +17,7 @@ black_bg.onclick = () => {
 function openMenu(id) {
   id.style.display = 'block'
   id.style.position = 'fixed'
-  id.style.top = '20%'
+  id.style.top = '25%'
   id.style.left = '0'
   id.style.width = 'auto'
   id.style.zIndex = '1'
