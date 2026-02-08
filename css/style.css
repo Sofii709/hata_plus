@@ -177,6 +177,14 @@ hr {
     max-width: 120px;
 }
 
+.submenu {
+    top: 150rem;
+}
+
+.subsubmenu {
+    top: 300rem;
+}
+
 .submenu,
 .subsubmenu {
     display: none;
@@ -885,9 +893,9 @@ input {
     border-radius: 3px;
     border: 1px solid #c5c5d4;
     margin: 5px 0;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 21px;
-    font-style: italic;
+    font-weight: bold;
 }
 
 textarea {
@@ -904,6 +912,9 @@ textarea {
 
 ::placeholder {
     color: #9999a6;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
 }
 
 .parent input {
@@ -984,6 +995,24 @@ input:checked+img {
 
 .nameee>input {
     width: 100%;
+}
+
+.form h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: bold;
+    font-family: "Roboto Slab";
+    text-align: center;
+    padding-top: 77rem;
+}
+
+.form h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: bold;
+    font-family: "Roboto";
+    padding-top: 69rem;
 }
 
 @media screen and (min-width: 467px) {
@@ -1103,6 +1132,10 @@ input:checked+img {
     .nav>li:hover>.submenu {
         display: block;
         top: calc(100% + 5px);
+    }
+
+    #btn {
+        padding-bottom: 5px;
     }
 
     .submenu>li {
