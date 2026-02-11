@@ -178,11 +178,11 @@ hr {
 }
 
 .submenu {
-    top: 150rem;
+    top: 160rem;
 }
 
 .subsubmenu {
-    top: 300rem;
+    top: 310rem;
 }
 
 .submenu,
@@ -899,15 +899,18 @@ input {
 }
 
 textarea {
-    height: 105px;
+    max-height: 205px;
     border-radius: 3px;
     border: 1px solid #c5c5d4;
     margin: 5px 0;
     font-size: 13px;
     line-height: 21px;
-    font-style: italic;
     font-family: "Arial";
     resize: vertical;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: bold;
+    font-style: none;
 }
 
 ::placeholder {
