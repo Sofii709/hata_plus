@@ -15,7 +15,7 @@
             <div class="gap menu">
                 <nav>
                     <ul id="menu" class="flex-between nav">
-                        <li id="cancel"><a href="">X</a></li>
+                        <li id="cancel"><a href="javascript:void(0)">X</a></li>
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="index.html">Про компанію</a></li>
                         <li>
@@ -111,7 +111,7 @@
         </div>
         <section class="main-contact wrapper">
             <h1>Контакти</h1>
-            <div class="gap wrap submain-contact">
+            <div class="wrap submain-contact">
                 <div class="submain">
                     <h3>Наш офіс</h3>
                     <p>с. Війтівці, Хмельницька обл. 27500</p>
@@ -137,26 +137,29 @@
                     <hr>
                 </div>
             </div>
-            <div class="map wrap">
+            <div class="map gap wrap">
                 <div class="mapz">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=160RWnFO7yUs3nccVCtgTUdUiX85VIrI&ehbc=2E312F"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/d/embed?mid=160RWnFO7yUs3nccVCtgTUdUiX85VIrI&ehbc=2E312F"></iframe>
                 </div>
                 <div class="form">
                     <h3>Форма зворотнього зв’язку</h3>
-                    <form action="">
-                                <div class="namee">
-                                    <div class="nameee"><input class="name" type="text" placeholder="Ваше ім’я" required></div>
-                                    <div class="nameee"><input class="phones" type="text" placeholder="Телефон" required></div>
-                                </div>
-                            <br>
-                        <input class="theme" type="text" placeholder="Тема повідомлення" required> <br>
+                    <form>
+                        <div class="flex-between phones">
+                            <label for="" class="nameee"><input type="text" placeholder="Ваше ім’я"
+                                    required></label>
+                            <label for="" class="nameee"><input type="text" placeholder="Телефон"
+                                    required></label>
+                        </div>
+                        <label for=""><input class="theme" type="text" placeholder="Тема повідомлення" required></label>
+                        <br>
                         <textarea class="text" placeholder="Текст" name="" id=""></textarea> <br>
                         <button class="button" type="submit">Відправити</button>
                         <label>
                             <span class="parent">
                                 <input type="checkbox" checked>
                                 <img src="img/galka.svg" alt="galka">
-                            </span> 
+                            </span>
                             Я бажаю отримувати останні новини
                         </label>
                     </form>
