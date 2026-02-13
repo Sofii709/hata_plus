@@ -832,7 +832,11 @@ footer {
 }
 
 .submain a {
-    padding: 12px 0;
+    padding: 0 0 12px;
+}
+
+.consultation a{
+    padding-bottom: 16px;
 }
 
 .submain .email {
@@ -840,7 +844,7 @@ footer {
 }
 
 .submain .email a {
-    padding: 14px 0;
+    padding: 14px 0 0;
 }
 
 .submain .phone {
@@ -920,15 +924,18 @@ input {
     font-weight: 200;
 }
 
-label>input {
+input {
     width: 100%;
 }
 
 .phones {
     gap: 30px;
+    padding-bottom: 10rem;
+    height: 40px;
 }
 
 textarea {
+    margin-top: 10rem;
     min-height: 80rem;
     max-height: 205px;
     border-radius: 3px;
@@ -941,10 +948,6 @@ textarea {
     line-height: 21px;
     font-style: none;
     font-weight: 200;
-}
-
-label {
-    gap: 20px;
 }
 
 ::placeholder {
@@ -991,7 +994,7 @@ input:checked+img {
 
 .button {
     border: none;
-    padding: 12px 30px;
+    padding: 12rem 30rem;
     border-radius: 21px;
     background-color: #fd8300;
     font-size: 14px;
@@ -1146,7 +1149,7 @@ input:checked+img {
 
     .nav>li:hover>.submenu {
         display: block;
-        top: calc(100% + 5px);
+        top: calc(100% + 20px);
     }
 
     #btn {
