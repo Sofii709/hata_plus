@@ -892,6 +892,7 @@ footer {
     color: #666666;
     font-family: "Arial";
     gap: 28px;
+    padding: 0 0 45px;
 }
 
 .mapz {
@@ -903,7 +904,6 @@ footer {
 
 .form {
     width: 100%;
-    padding: 0 0 45px;
 }
 
 iframe {
@@ -935,7 +935,7 @@ input {
 }
 
 textarea {
-    margin-top: 10rem;
+    margin: 10rem 0;
     min-height: 80rem;
     max-height: 205px;
     border-radius: 3px;
@@ -1149,11 +1149,11 @@ input:checked+img {
 
     .nav>li:hover>.submenu {
         display: block;
-        top: calc(100% + 20px);
+        top: 100%;
     }
 
     #btn {
-        padding-bottom: 5px;
+        padding-bottom: 27px;
     }
 
     .submenu>li {
