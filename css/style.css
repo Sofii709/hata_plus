@@ -182,7 +182,7 @@ hr {
 }
 
 .subsubmenu {
-    top: 310rem;
+    top: 330rem;
 }
 
 .submenu,
@@ -195,19 +195,19 @@ hr {
 .submenu a,
 .subsubmenu a {
     background-color: #e4e4ec;
-    padding: 0px 10px;
+    padding: 3px 10px;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #25252c;
 }
 
-.subsubmenu a:hover {
+.subsubmenu li:hover>a {
     color: #ffffff;
     background-color: #fd8300;
 }
 
-.submenu a:hover {
+.submenu li:hover>a {
     color: #ffffff;
     background-color: #fd8300;
 }
@@ -835,7 +835,7 @@ footer {
     padding: 0 0 12px;
 }
 
-.consultation a{
+.consultation a {
     padding-bottom: 16px;
 }
 
@@ -1015,33 +1015,10 @@ input:checked+img {
     height: 40rem;
 }
 
-.form h1 {
-    font-size: 30px;
-    color: #1f222c;
-    font-weight: bold;
-    font-family: "Roboto Slab";
-    text-align: center;
-    padding-top: 77rem;
-}
-
-.form h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #b3b3b3;
-    font-weight: bold;
-    font-family: "Roboto";
-    padding-top: 69rem;
-}
-
 @media screen and (min-width: 467px) {
     .menu {
         display: flex;
         justify-content: space-between;
-    }
-
-    .footer_line {
-        justify-content: space-between;
-        align-items: flex-start;
     }
 
     .about_us {
@@ -1064,6 +1041,11 @@ input:checked+img {
 
     .desc p {
         margin-bottom: 0px;
+    }
+
+    .footer_line {
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
 
@@ -1154,6 +1136,25 @@ input:checked+img {
 
     #btn {
         padding-bottom: 27px;
+    }
+
+    .submenu>li>a:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-right: 3rem solid #666;
+        border-bottom: 3rem solid #666;
+        top: 50%;
+        right: 9rem;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: all 0.5s ease;
+    }
+
+    .submenu li:hover a:after {
+        border-color: #fff;
+        transform: translateY(-50%) rotate(45deg);
     }
 
     .submenu>li {
