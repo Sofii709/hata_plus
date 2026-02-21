@@ -533,6 +533,11 @@ figure {
     object-fit: cover;
 }
 
+.projects h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .projects h4 {
     position: relative;
     padding-top: 15px;
@@ -1031,8 +1036,9 @@ input:checked+img {
 }
 
 @media screen and (min-width: 600px) {
-    .projects h3 {
-        text-align: start;
+    .figures {
+        display: grid;
+        grid-template-columns: repeat;
     }
 
     .main_contact {
@@ -1054,7 +1060,13 @@ input:checked+img {
         font-size: 0.9px;
     }
 
+    .projects h3 {
+        text-align: start;
+        justify-content: flex-start;
+    }
+
     .figures {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
