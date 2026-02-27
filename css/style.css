@@ -508,18 +508,19 @@ hr {
     text-align: center;
 }
 
-.projects figure {
-    max-width: 240px;
-}
-
 .figures {
     gap: 28px;
     display: flex;
+    justify-content: center;
+}
+
+.first_figure {
     flex-direction: column;
     align-items: center;
 }
 
 figure {
+    max-width: 240px;
     width: 100%;
 }
 
@@ -531,11 +532,6 @@ figure {
 .projects img {
     width: 100%;
     object-fit: cover;
-}
-
-.projects h3 {
-    display: flex;
-    justify-content: center;
 }
 
 .projects h4 {
@@ -815,7 +811,7 @@ footer {
 }
 
 .submain-contact {
-    row-gap: 30px;
+    row-gap: 60px;
     display: flex;
     justify-content: center;
     padding-bottom: 36px;
@@ -840,8 +836,8 @@ footer {
     padding: 0 0 12px;
 }
 
-.consultation a {
-    padding-bottom: 16px;
+.consultation {
+    padding-top: 14px;
 }
 
 .submain .email {
@@ -1036,11 +1032,6 @@ input:checked+img {
 }
 
 @media screen and (min-width: 600px) {
-    .figures {
-        display: grid;
-        grid-template-columns: repeat;
-    }
-
     .main_contact {
         margin-bottom: 0px;
     }
@@ -1062,7 +1053,6 @@ input:checked+img {
 
     .projects h3 {
         text-align: start;
-        justify-content: flex-start;
     }
 
     .figures {
@@ -1086,7 +1076,9 @@ input:checked+img {
     .main_contact {
         padding: 29px 15px;
     }
+}
 
+@media screen and (min-width: 786px) {
     .submain-contact {
         display: flex;
         justify-content: space-between;
@@ -1197,6 +1189,12 @@ input:checked+img {
         width: auto;
     }
 
+    .recvisit {
+        padding-right: 67px;
+    }
+}
+
+@media screen and (min-width: 964px) {
     .categories {
         max-width: 219px;
     }
@@ -1206,9 +1204,6 @@ input:checked+img {
         align-items: flex-start;
     }
 
-    .recvisit {
-        padding-right: 67px;
-    }
 }
 
 @media screen and (min-width: 959px) {
