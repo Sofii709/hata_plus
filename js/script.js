@@ -14,6 +14,24 @@ black_bg.onclick = () => {
   black_bg.style.display = "none"
 }
 
+order_call.onclick = (e) => {
+  e.preventDefault()
+  popup.style.display = "block"
+  dlur.style.display = "block"
+}
+
+dlur.onclick = (e) => {
+  e.preventDefault()
+  popup.style.display = "none"
+  dlur.style.display = "none"
+}
+
+order_cancel.onclick = (e) => {
+  e.preventDefault()
+  popup.style.display = "none"
+  dlur.style.display = "none"
+}
+
 function openMenu(id) {
   id.style.display = 'block'
   id.style.position = 'fixed'

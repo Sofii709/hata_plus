@@ -909,7 +909,7 @@ footer {
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: calc(100% + 72px);
     position: absolute;
     top: -72px;
     left: 0;
@@ -1016,6 +1016,48 @@ input:checked+img {
     height: 40rem;
 }
 
+.popup h2 {
+    font-size: 24px;
+    color: #24242b;
+    padding-top: 28px;
+    padding-bottom: 19px;
+    justify-self: flex-start;
+}
+
+.popup {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 360rem;
+}
+
+#order_cancel {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    border: none;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    color: #a5a7a8;
+}
+
+.popup .button {
+    width: 80%;
+}
+
+#dlur {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.902;
+    background-color: #0f0f19;
+}
+
 @media screen and (min-width: 467px) {
     .menu {
         display: flex;
@@ -1051,14 +1093,10 @@ input:checked+img {
         font-size: 0.9px;
     }
 
-    .projects h3 {
-        text-align: start;
-    }
-
-    .figures {
-        display: flex;
+    .first_figure {
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     figure {
@@ -1199,6 +1237,12 @@ input:checked+img {
         max-width: 219px;
     }
 
+    .first_figure {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
     .company {
         flex-direction: row;
         align-items: flex-start;
@@ -1216,6 +1260,10 @@ input:checked+img {
     .main_contact {
         justify-content: space-between;
     }
+
+    .projects h3 {
+        text-align: start;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -1227,5 +1275,17 @@ input:checked+img {
 @media screen and (min-width:1920px) {
     html {
         font-size: 1.4px;
+    }
+
+    .map {
+        gap: 15px;
+    }
+
+    .phones {
+        gap: 40px;
+    }
+
+    .price-table {
+        min-width: 300px;
     }
 }
