@@ -1038,9 +1038,7 @@ input:checked+img {
 }
 
 .popup {
-    padding: 30px 30px 25px;
-    display: flex;
-    justify-content: center;
+    padding: 30rem 30rem 25rem;
     z-index: 3;
     display: none;
     top: 50%;
@@ -1050,6 +1048,7 @@ input:checked+img {
     border-radius: 5px;
     background-color: #fff;
     max-width: 360rem;
+    min-width: 50%;
 }
 
 .inputs input {
