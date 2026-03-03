@@ -508,6 +508,15 @@ hr {
     text-align: center;
 }
 
+.figures a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
 .figures {
     gap: 28px;
     display: flex;
@@ -520,6 +529,7 @@ hr {
 }
 
 figure {
+    position: relative;
     max-width: 240px;
     width: 100%;
 }
@@ -917,12 +927,14 @@ iframe {
 }
 
 input {
+    box-sizing: border-box;
     padding: 9rem 12rem;
     border-radius: 3px;
     border: 1px solid #c5c5d4;
     font-size: 13px;
     line-height: 21px;
     font-weight: 200;
+    color: #0f0f19;
 }
 
 input {
@@ -930,12 +942,13 @@ input {
 }
 
 .phones {
-    gap: 30px;
+    gap: 10px;
     padding-bottom: 10rem;
     height: 40px;
 }
 
 textarea {
+    max-width: calc(100% - 24rem);
     margin: 10rem 0;
     min-height: 80rem;
     max-height: 205px;
@@ -994,6 +1007,7 @@ input:checked+img {
 }
 
 .button {
+    width: 100%;
     border: none;
     padding: 12rem 30rem;
     border-radius: 21px;
@@ -1012,19 +1026,22 @@ input:checked+img {
 }
 
 .nameee {
-    width: 47%;
+    width: 100%;
     height: 40rem;
 }
 
 .popup h2 {
     font-size: 24px;
     color: #24242b;
-    padding-top: 28px;
     padding-bottom: 19px;
     justify-self: flex-start;
 }
 
 .popup {
+    padding: 30px 30px 25px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
     display: none;
     top: 50%;
     left: 50%;
@@ -1033,6 +1050,14 @@ input:checked+img {
     border-radius: 5px;
     background-color: #fff;
     max-width: 360rem;
+}
+
+.inputs input {
+    margin-bottom: 10px;
+}
+
+.popup .button {
+    width: 100%;
 }
 
 #order_cancel {
@@ -1046,16 +1071,21 @@ input:checked+img {
     color: #a5a7a8;
 }
 
-.popup .button {
-    width: 80%;
+#order_cancel:hover {
+    color: #fd8300;
+    background-color: transparent;
 }
 
-#dlur {
+#blury {
     display: none;
-    width: 100%;
-    height: 100%;
     opacity: 0.902;
     background-color: #0f0f19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 @media screen and (min-width: 467px) {
@@ -1070,6 +1100,10 @@ input:checked+img {
 
     .phone p:last-child {
         margin-bottom: 0;
+    }
+
+    .button {
+        width: auto;
     }
 }
 

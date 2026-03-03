@@ -17,19 +17,24 @@ black_bg.onclick = () => {
 order_call.onclick = (e) => {
   e.preventDefault()
   popup.style.display = "block"
-  dlur.style.display = "block"
+  blury.style.display = "block"
 }
 
-dlur.onclick = (e) => {
+blury.onclick = (e) => {
   e.preventDefault()
   popup.style.display = "none"
-  dlur.style.display = "none"
+  blury.style.display = "none"
 }
 
 order_cancel.onclick = (e) => {
   e.preventDefault()
   popup.style.display = "none"
-  dlur.style.display = "none"
+  blury.style.display = "none"
+}
+
+sizing.onclick = (e) => {
+  e.preventDefault()
+  image.style.position = 'fixed'
 }
 
 function openMenu(id) {
