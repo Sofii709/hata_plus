@@ -1039,7 +1039,7 @@ input:checked+img {
 
 .popup {
     padding: 30rem 30rem 25rem;
-    z-index: 3;
+    z-index: 4;
     display: none;
     top: 50%;
     left: 50%;
@@ -1084,7 +1084,7 @@ input:checked+img {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
 }
 
 @media screen and (min-width: 467px) {
@@ -1119,6 +1119,10 @@ input:checked+img {
         justify-content: space-between;
         align-items: flex-start;
     }
+
+    .popup {
+    min-width: auto;
+}
 }
 
 @media screen and (min-width: 768px) {
