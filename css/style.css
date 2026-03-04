@@ -536,6 +536,14 @@ figure {
     object-fit: cover;
 }
 
+#image {
+    transition: 0.3s;
+}
+
+#image.big {
+  position: fixed;
+}
+
 .projects h4 {
     position: relative;
     padding-top: 15px;

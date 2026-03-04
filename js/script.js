@@ -32,9 +32,16 @@ order_cancel.onclick = (e) => {
   blury.style.display = "none"
 }
 
-sizing.onclick = (e) => {
+image.onclick = (e) => {
   e.preventDefault()
-  image.style.position = 'fixed'
+  image.classList.add("big")
+  blury.style.display = "block"
+}
+
+blury.onclick = (e) => {
+  e.preventDefault()
+  image.classList.remove("big")
+  blury.style.display = "none"
 }
 
 function openMenu(id) {
