@@ -93,6 +93,7 @@ ul {
 }
 
 a {
+    display: inline-block;
     cursor: url(../img/cursor.cur), default;
     text-decoration: none;
     transition: all 1s ease;
@@ -303,7 +304,7 @@ hr {
 .column-gap {
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 12px;
 }
 
 .line {
@@ -506,15 +507,6 @@ hr {
     color: #24242b;
     font-weight: bold;
     text-align: center;
-}
-
-.figures a {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
 }
 
 .figures {
@@ -832,6 +824,10 @@ footer {
     min-width: 250px;
 }
 
+.submain .first-phone a {
+    padding-bottom: 12px;
+}
+
 .submain {
     display: flex;
     flex-direction: column;
@@ -843,7 +839,7 @@ footer {
 }
 
 .submain a {
-    padding: 0 0 12px;
+    padding: 0;
 }
 
 .consultation {
@@ -1136,10 +1132,6 @@ input:checked+img {
         justify-content: center;
     }
 
-    figure {
-        width: auto;
-    }
-
     .line {
         display: inline-block;
     }
@@ -1300,6 +1292,10 @@ input:checked+img {
 
     .projects h3 {
         text-align: start;
+    }
+
+    .figures {
+        flex-wrap: nowrap;
     }
 }
 
