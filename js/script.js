@@ -38,12 +38,6 @@ image.onclick = (e) => {
   blury.style.display = "block"
 }
 
-blury.onclick = (e) => {
-  e.preventDefault()
-  image.classList.remove("big")
-  blury.style.display = "none"
-}
-
 function openMenu(id) {
   id.style.display = 'block'
   id.style.position = 'fixed'

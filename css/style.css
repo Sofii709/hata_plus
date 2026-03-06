@@ -1011,6 +1011,7 @@ input:checked+img {
 }
 
 .button {
+    cursor: url(../img/cursor.cur), default;
     width: 100%;
     border: none;
     padding: 12rem 30rem;
