@@ -51,6 +51,7 @@ cancelPopup.onclick = (e) => {
   e.preventDefault()
   popups.style.display = "none"
   popupsImg.src = ''
+  blury.style.display = "none"
 }
 
 function openMenu(id) {
