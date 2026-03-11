@@ -845,7 +845,7 @@ footer {
 }
 
 .submain-contact {
-    row-gap: 60px;
+    row-gap: 36px;
     display: flex;
     justify-content: center;
     padding-bottom: 36px;
@@ -875,7 +875,7 @@ footer {
 }
 
 .consultation {
-    padding-top: 14px;
+    padding-top: 10px;
 }
 
 .submain .email {
@@ -920,7 +920,7 @@ footer {
     line-height: 1.6em;
     color: #666666;
     font-family: "Arial";
-    padding-bottom: 14px;
+    padding-bottom: 10px;
 }
 
 .map {
