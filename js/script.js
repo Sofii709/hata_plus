@@ -32,10 +32,23 @@ order_cancel.onclick = (e) => {
   blury.style.display = "none"
 }
 
-image.onclick = (e) => {
+const popups = document.querySelector(".popups"),
+  popupsImg = popups.querySelector("img"),
+  cancelPopup = popups.querySelector("a"),
+  figureImg = document.querySelectorAll("figure img")
+
+figureImg.forEach(item => {
+  item.onclick = (e) => {
+    e.preventDefault()
+    popups.style.display = "block"
+    popupsImg.src = item.getAttribute("src")
+  }
+})
+
+cancelPopup.onclick = (e) => {
   e.preventDefault()
-  image.classList.add("big")
-  blury.style.display = "block"
+  popups.style.display = "none"
+  popupsImg.src = ''
 }
 
 function openMenu(id) {
@@ -51,23 +64,23 @@ function closeMenu(id) {
   id.style.position = 'static'
 }
 
-if(window.innerWidth < 800) {
+if (window.innerWidth < 800) {
   btn.onclick = (e) => {
-  e.preventDefault()
-  openMenu(submenu)
-}
+    e.preventDefault()
+    openMenu(submenu)
+  }
 
-subbtn.onclick = (e) => {
-  e.preventDefault()
-  openMenu(subsubmenu)
-}
+  subbtn.onclick = (e) => {
+    e.preventDefault()
+    openMenu(subsubmenu)
+  }
 
-cancelsub.onclick = (e) => {
-  e.preventDefault()
-  closeMenu(submenu)
-}
-cancelsubsub.onclick = (e) => {
-  e.preventDefault()
-  closeMenu(subsubmenu)
-}
+  cancelsub.onclick = (e) => {
+    e.preventDefault()
+    closeMenu(submenu)
+  }
+  cancelsubsub.onclick = (e) => {
+    e.preventDefault()
+    closeMenu(subsubmenu)
+  }
 }

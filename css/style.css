@@ -509,6 +509,30 @@ hr {
     text-align: center;
 }
 
+.popups {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: auto;
+    z-index: 4;
+}
+
+.popups img {
+    width: 100%;
+    height: 100%;
+}
+
+.cancel_popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
 .figures {
     gap: 28px;
     display: flex;
@@ -541,7 +565,7 @@ figure {
 }
 
 #image.big {
-  position: fixed;
+    position: fixed;
 }
 
 .projects h4 {
@@ -1109,6 +1133,10 @@ input:checked+img {
     .button {
         width: auto;
     }
+
+    .popups {
+        width: 90vw;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -1126,8 +1154,8 @@ input:checked+img {
     }
 
     .popup {
-    min-width: auto;
-}
+        min-width: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1258,6 +1286,10 @@ input:checked+img {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .popups {
+        width: 80vw;
+    }
 }
 
 @media screen and (min-width: 942px) {
@@ -1306,11 +1338,19 @@ input:checked+img {
     .figures {
         flex-wrap: nowrap;
     }
+
+    .popups {
+        width: 60vw;
+    }
 }
 
 @media screen and (min-width:1440px) {
     html {
         font-size: 1px;
+    }
+
+    .popups {
+        width: 40vw;
     }
 }
 
@@ -1329,5 +1369,9 @@ input:checked+img {
 
     .price-table {
         min-width: 300px;
+    }
+
+    .popups {
+        width: 30vw;
     }
 }
