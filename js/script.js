@@ -22,6 +22,7 @@ order_call.onclick = (e) => {
 
 blury.onclick = (e) => {
   e.preventDefault()
+  popups.style.display = "none"
   popup.style.display = "none"
   blury.style.display = "none"
 }
@@ -41,6 +42,7 @@ figureImg.forEach(item => {
   item.onclick = (e) => {
     e.preventDefault()
     popups.style.display = "block"
+    blury.style.display = "block"
     popupsImg.src = item.getAttribute("src")
   }
 })
