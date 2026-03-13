@@ -109,9 +109,11 @@
                         <div class="popup wrapper" id="popup">
                             <h2>Замовити дзвінок</h2>
                             <div class="inputs">
-                                <label for=""><input type="text" name="" placeholder="Ваше ім’я"></label>
-                                <label for=""><input type="text" name="" placeholder="Телефон"></label>
-                                <button class="button" type="submit">Відправити</button>
+                                <form action="index.php" method="post">
+                                    <label for=""><input type="text" name="" placeholder="Ваше ім’я"></label>
+                                    <label for=""><input type="text" name="" placeholder="Телефон"></label>
+                                    <button class="button" type="submit">Відправити</button>
+                                </form>
                             </div>
                             <a href="" id="order_cancel">x</a>
                         </div>
@@ -154,20 +156,20 @@
                 </div>
                 <div class="form">
                     <h3>Форма зворотнього зв’язку</h3>
-                    <form>
+                    <form action="form.php" method="post">
                         <div class="flex-between phones">
-                            <label for="" class="nameee"><input type="text" placeholder="Ваше ім’я"
+                            <label for="" class="nameee"><input type="text" name="name" placeholder="Ваше ім’я"
                                     required></label>
-                            <label for="" class="nameee"><input type="text" placeholder="Телефон"
+                            <label for="" class="nameee"><input type="text" name="phone" placeholder="Телефон"
                                     required></label>
                         </div>
-                        <label for=""><input class="theme" type="text" placeholder="Тема повідомлення" required></label>
-                        <textarea class="text" placeholder="Текст" name="" id=""></textarea> <br>
+                        <label for=""><input class="theme" type="text" name="theme" placeholder="Тема повідомлення" required></label>
+                        <textarea class="text" placeholder="Текст" name="comment" id=""></textarea>
                         <div class="items-center wrap gap">
                             <button class="button" type="submit">Відправити</button>
                             <label>
                                 <span class="parent">
-                                    <input type="checkbox" checked>
+                                    <input type="checkbox" name="allow" checked>
                                     <img src="img/galka.svg" alt="galka">
                                 </span>
                                 Я бажаю отримувати останні новини

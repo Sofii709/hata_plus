@@ -109,9 +109,11 @@
                         <div class="popup wrapper" id="popup">
                             <h2>Замовити дзвінок</h2>
                             <div class="inputs">
-                                <label for=""><input type="text" name="" placeholder="Ваше ім’я"></label>
-                                <label for=""><input type="text" name="" placeholder="Телефон"></label>
-                                <button class="button" type="submit">Відправити</button>
+                                <form action="index.php" method="post">
+                                    <label for=""><input type="text" name="name" placeholder="Ваше ім’я"></label>
+                                    <label for=""><input type="text" name="phone" placeholder="Телефон"></label>
+                                    <button class="button" type="submit">Відправити</button>
+                                </form>
                             </div>
                             <a href="" id="order_cancel">x</a>
                         </div>
