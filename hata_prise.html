@@ -110,8 +110,8 @@
                             <h2>Замовити дзвінок</h2>
                             <div class="inputs">
                                 <form action="send.php" method="post">
-                                    <label for=""><input type="text" name="name" placeholder="Ваше ім’я"></label>
-                                    <label for=""><input type="text" name="phone" placeholder="Телефон"></label>
+                                    <label for=""><input type="text" name="name" placeholder="Ваше ім’я" required></label>
+                                    <label for=""><input type="text" name="phone" placeholder="Телефон" required></label>
                                     <button class="button" type="submit">Відправити</button>
                                 </form>
                             </div>
@@ -207,7 +207,7 @@
             <div class="projects gap">
                 <h3>Популярні проекти</h3>
                 <div class="figures gap wrap">
-                    <div class="popups">
+                    <div id="popups" class="popups">
                         <img src="" alt="">
                         <a class="cancel_popup" href="#">X</a>
                     </div>

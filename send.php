@@ -1,3 +1,27 @@
+<?php
+try {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+} catch(\Throwable $th) {
+    $name = 'error';
+    $phone = 'error';
+}
+
+$token = "8478939539:AAF-og95Tybt8dFTv4yYOUneT9DebT-XZfo";
+$chat_id = "5360123260";
+
+$name = urldecode($name);
+$phone = urldecode($phone);
+
+$urlQuery = "https://api.telegram.org/bot". $token ."/sendMessage?chat_id=". $chat_id ."&text=".
+"<b>ім’я:</b> $name" . "%0A" .
+"<b>Телефон:</b> $phone" . "%0A";
+
+$urlQuery .= "&parse_mode=HTML";
+
+$result = file_get_contents($urlQuery);
+?>
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -75,7 +99,12 @@
     </header>
     <main>
         <div class="fixed send wrapper">
-            <h2>Дякуємо за реєстрацію. Натисніть на "повернутись на сторінку"</h2>
+            <h2>Дякуємо за реєстрацію</h2>
+            <p>Перевірте дані</p>
+            <ul>
+                <li>ім’я- <?= $name ?></li>
+                <li>Телефон- <?= $phone ?></li>
+            </ul>
             <a href="index.html">Повернутись на сторінку</a>
         </div>
     </main>
@@ -135,27 +164,3 @@
     </script>
 </body>
 </html>
-
-<?php
-try {
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-} catch(\Throwable $th) {
-    $name = 'error';
-    $phone = 'error';
-}
-
-$token = "8478939539:AAF-og95Tybt8dFTv4yYOUneT9DebT-XZfo";
-$chat_id = "5360123260";
-
-$name = urldecode($name);
-$phone = urldecode($phone);
-
-$urlQuery = "https://api.telegram.org/bot". $token ."/sendMessage?chat_id=". $chat_id ."&text=".
-"<b>ім’я:</b> $name" . "%0A" .
-"<b>Телефон:</b> $phone" . "%0A";
-
-$urlQuery .= "&parse_mode=HTML";
-
-$result = file_get_contents($urlQuery);
-?>

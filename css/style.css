@@ -1129,6 +1129,16 @@ input:checked+img {
     padding-bottom: 40px;
 }
 
+.send p {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.send ul {
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
 .send a {
     font-size: 16px;
     line-height: 1.7em;
