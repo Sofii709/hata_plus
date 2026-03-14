@@ -22,7 +22,7 @@ order_call.onclick = (e) => {
 
 blury.onclick = (e) => {
   e.preventDefault()
-  popups.style.display = "none"
+  if(popups) popups.style.display = "none"
   popup.style.display = "none"
   blury.style.display = "none"
 }
