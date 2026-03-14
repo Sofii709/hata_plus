@@ -140,35 +140,20 @@
 try {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $theme = $_POST['theme'];
-    $textM = $_POST['comment'];
-    $allow = $_POST['allow'];
 } catch(\Throwable $th) {
     $name = 'error';
     $phone = 'error';
-    $theme = 'error';
-    $textM = 'error';
-    $allow = 'error';
 }
 
 $token = "8478939539:AAF-og95Tybt8dFTv4yYOUneT9DebT-XZfo";
-$chat_id = 5360123260;
+$chat_id = "5360123260";
 
 $name = urldecode($name);
 $phone = urldecode($phone);
-$theme = urldecode($theme);
-$textM = urldecode($textM);
-$allow = urldecode($allow);
 
 $urlQuery = "https://api.telegram.org/bot". $token ."/sendMessage?chat_id=". $chat_id ."&text=".
 "<b>ім’я:</b> $name" . "%0A" .
-"<b>Телефон:</b> $phone" . "%0A" .
-"<b>Тема повідомлення:</b> $theme" . "%0A" .
-"<b>Текст:</b> $textM" . "%0A";
-
-if($allow) {
-    $text .= "<b>Перевірка данних:</b> $allow";
-}
+"<b>Телефон:</b> $phone" . "%0A";
 
 $urlQuery .= "&parse_mode=HTML";
 
